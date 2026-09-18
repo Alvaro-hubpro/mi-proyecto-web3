@@ -1,0 +1,141 @@
+# Rediseño luminoso — tareas activas
+
+- [x] Seleccionar imágenes de pérgolas realistas, luminosas y de alta definición para Hero y Catálogo.
+- [x] Escalar Hero, Catálogo y Contacto con imágenes de gran formato y encuadres inmersivos.
+- [x] Desplazar el contenido del Hero hacia la derecha y añadir el carrusel tipográfico de fondo.
+- [x] Intensificar la tipografía bold, los degradados metálicos y los efectos glow en toda la interfaz.
+- [x] Elevar la luminosidad global de piedra, dorado y grafito manteniendo el contraste.
+- [x] Convertir la paleta visual a blanco, negro y grises con profundidad inmersiva.
+- [x] Reducir la opacidad del overlay del Hero para revelar más fotografía.
+- [x] Eliminar por completo el velo del Hero y mostrar la imagen sin opacidad.
+- [x] Aumentar brillo y claridad de todas las imágenes monocromáticas.
+- [x] Aplicar Glow UI con Hero gris iluminado, resplandor blanco e imágenes autoiluminadas.
+- [x] Reforzar materiales, galerías y contacto inmersivo con bordes y campos brillantes.
+- [x] Replantear Características, Mejoras y Proceso como paneles luminosos de alto contraste.
+- [x] Corregir la ubicación del bloque Hecha para ti en la sección Mejoras.
+- [x] Ajustar el encaje y espaciado fino de todas las tarjetas de Mejoras.
+- [x] Reubicar el bloque de Contacto hacia la derecha y reforzar su iluminación naranja/dorada.
+- [x] Reforzar tipografía sans-serif, pesos y legibilidad de todo el catálogo.
+- [x] Reposicionar el Hero hacia la izquierda con un bloque editorial asimétrico.
+- [x] Corregir el anclaje real del bloque de Inicio a la izquierda y reducir su altura vertical.
+- [x] Eliminar el fondo del texto de Inicio y reorganizar el título en formato horizontal ancho.
+- [x] Quitar inclinación del texto destacado y reforzar la imagen de Inicio a pantalla completa.
+- [x] Normalizar subtítulos destacados para que sean rectos conservando su color de énfasis.
+- [x] Clasificar las imágenes adjuntas y asignarlas según el sentido de cada sección.
+- [x] Actualizar Inicio, Características, Mejoras y Proceso con imágenes contextualizadas.
+- [x] Actualizar el carrusel de Inicio con las nuevas fotos, preservando la primera escena con flores moradas.
+- [x] Ampliar Nuestro Proceso a ocho imágenes y mostrar cuatro por vista mediante carrusel.
+- [x] Convertir Nuestros Proyectos en una galería de siete imágenes con cuatro por vista.
+- [x] Restituir Nuestros Proyectos como carrusel vertical TikTok de cinco proyectos terminados en formato 9:16.
+- [x] Igualar el tamaño de todas las tarjetas de Proyectos con las de Nuestro Proceso.
+- [x] Reducir el contenedor y espaciado de Proyectos para que coincida visualmente con Nuestro Proceso.
+- [x] Mejorar la composición visual y editorial de Una nueva perspectiva.
+- [x] Reemplazar la galería de Proyectos por un carrusel vertical inmersivo de cinco proyectos.
+- [x] Suavizar la oscuridad del fondo de Contacto para mostrar mejor la fotografía.
+- [x] Ampliar la imagen de Proyectos y añadir una transición visible al cambiar de proyecto.
+- [x] Crear una comparativa material explícita entre aluminio básico y aluminio premium.
+- [x] Convertir Contacto en un overlay inmersivo a pantalla completa activado desde el menú hamburguesa.
+- [x] Validar escritorio y móvil, compilar y guardar el rediseño final.
+- [x] Simplificar los halos para que la iluminación sea coherente y arquitectónica.
+- [x] Restaurar el color natural de Hero, materiales, proceso y proyectos con brillo sutil.
+- [x] Afinar definición, color y luminosidad de las fotografías sin alterar su aspecto natural.
+- [x] Retirar del carrusel inicial la foto con la silla y manta celeste frente a vitrinas.
+- [x] Reconfigurar Nuestros Proyectos con cuatro imágenes laterales por vista y carrusel de recorridos.
+- [x] Igualar el fondo de Nuestros Proyectos con el fondo de Nuestro Proceso.
+- [x] Uniformar el fondo, aura y tonos de Proceso y Proyectos sin variaciones perceptibles.
+- [x] Preparar los seis videos de Terraza 360 sin audio para reproducción web.
+- [x] Agregar Terraza 360 a la navegación y crear una galería Glow UI con detalles técnicos.
+- [x] Reemplazar la prioridad del carrusel vertical por Proyectos con cuatro imágenes por recorrido.
+- [x] Restaurar Nuestros Proyectos como carrusel de cuatro imágenes por recorrido.
+- [x] Verificar reproducción automática silenciosa y diseño responsivo de la galería de videos.
+- [x] Preparar el video adicional sin audio para la experiencia Terraza 360.
+- [x] Mover Terraza 360 a una página independiente con portada, título, texto y visor ampliado funcional.
+- [x] Conectar la página desde el menú y retirar la galería de videos de la landing principal.
+- [x] Reducir y reubicar textos para preservar visibilidad de los videos.
+- [x] Reordenar la cuadrícula de Terraza 360 para una lectura visual más clara.
+- [x] Convertir Terraza 360 en secuencia de videos a pantalla completa con scroll snapping.
+- [x] Simplificar el texto centrado de cada video y eliminar sus efectos de glow.
+- [x] Mejorar el video real del Hero a una versión premium de alta resolución 2K/4K.
+- [x] Reemplazar el recorrido vertical de Terraza 360 por una cuadrícula audiovisual estructurada.
+- [x] Aplicar texto grande centrado sin fondo ni glow sobre cada video de Terraza 360.
+- [x] Añadir una portada de imagen de alta resolución a pantalla completa antes de la galería Terraza 360.
+- [x] Restaurar la imagen de alta resolución como fondo del Inicio y mover el video real 2K a Terraza 360.
+- [x] Reemplazar el video repetido de Terraza 360 por el nuevo material proporcionado.
+- [x] Preparar la portada audiovisual de Terraza 360 en resolución 4K sin audio.
+- [x] Aumentar ligeramente el texto de las tarjetas sin cambiar su posición.
+- [x] Añadir iconos funcionales para ampliar cada video de la galería.
+- [x] Incorporar al final de Terraza 360 el bloque de contacto inmersivo de la landing principal.
+- [x] Asegurar contraste claro del título y descripción debajo de todos los videos ampliados.
+- [x] Mover Terraza 360 al primer acceso de navegación y resaltarla visualmente.
+- [x] Eliminar la opción de descarga de los reproductores de video de Terraza 360.
+- [x] Combinar el inicio limpio con la continuación del segundo video sin logo.
+- [x] Eliminar del video final el cierre de WhatsApp y laptop.
+- [x] Publicar e integrar el video limpio en Terraza 360.
+- [x] Publicar las fotografías proporcionadas como recursos de la nueva Galería.
+- [x] Crear la página independiente de Galería con filtros y visor ampliado.
+- [x] Añadir el acceso destacado de Galería junto a Terraza 360 sin etiquetas de novedad.
+- [x] Mejorar el acceso flotante de WhatsApp con su icono identificable.
+- [x] Convertir Galería a una experiencia de fondo claro con hero fotográfico amplio.
+- [x] Publicar e integrar las nuevas fotografías en Aluminio exterior.
+- [x] Ajustar Galería a blanco puro con hero de color natural.
+- [x] Añadir el bloque Contáctanos al cierre de Galería.
+- [x] Ajustar el hero y la cabecera de Galería con la presencia de Terraza 360.
+- [x] Depurar el filtro Aluminio y sustituir el hero por una escena exterior luminosa.
+- [x] Depurar fotos de Aluminio, equilibrar las láminas y ampliar el hero a pantalla completa.
+- [x] Ajustar Terraza 360 a fondo blanco, cabecera negra y hero de video mejorado.
+- [x] Intercambiar el video hero de Terraza 360 con el video seis de la galería.
+- [x] Aclarar los visores ampliados y añadir WhatsApp en Terraza 360.
+- [x] Actualizar el hero de Galería con una imagen exterior más atractiva.
+- [x] Ajustar el hero móvil de Galería y reemplazarlo por una foto exterior de alta calidad.
+- [x] Cambiar marca, hero de Galería y datos de contacto, con formularios funcionales hacia WhatsApp.
+- [x] Optimizar e integrar los seis videos nuevos en Terraza 360.
+- [x] Homogeneizar los seis videos nuevos con las tarjetas originales y reemplazar sus títulos genéricos.
+- [x] Renombrar Pérgola 360, usar Panorama exterior como hero y reemplazar las seis primeras tarjetas.
+- [x] Retirar escenas indicadas, agregar los recorridos nuevos no duplicados y ampliar el hero de Pérgola 360.
+- [x] Eliminar recorridos repetidos, mantener audio solo en el visor y elegir un hero 360 de alta calidad.
+- [x] Aclarar Características, Mejoras, Proceso y Proyectos, y compactar la cabecera de Inicio.
+- [x] Añadir derechos reservados y una imagen adicional a Nuestros Proyectos.
+- [x] Añadir cierres de derechos reservados en Pérgola 360 y Galería, con una pantalla de carga global.
+- [x] Reforzar la legibilidad del texto de la cabecera negra sin alterar su fondo.
+- [x] Acercar el botón de menú de tres líneas a la identidad de marca.
+- [x] Reforzar textos e íconos para que se distingan correctamente sobre fondos claros.
+- [x] Elaborar un estudio estratégico de palabras clave para pérgolas a medida en Lima y Villa El Salvador.
+- [x] Integrar palabras clave locales y transaccionales en contenido y metadatos sin sobreoptimizar.
+- [x] Mejorar títulos y textos alternativos para Pérgola 360, Galería y servicios principales.
+- [x] Analizar los ocho videos nuevos, identificar duplicados y seleccionar el hero de Pérgola 360.
+- [x] Publicar e integrar los recorridos únicos en Pérgola 360 sin alterar los controles existentes.
+- [x] Añadir una explicación y beneficios concretos a cada recorrido de Pérgola 360.
+- [x] Reconvertir la galería de recorridos a formato horizontal tipo YouTube.
+- [x] Restaurar el estilo tipográfico previo en las tarjetas de Pérgola 360.
+- [x] Mover explicaciones y ventajas al visor ampliado, con un acceso de ampliación visible.
+- [x] Identificar y retirar recorridos repetidos de Pérgola 360.
+- [x] Eliminar el cierre con WhatsApp y número del video hero de Pérgola 360.
+- [x] Usar el video número 6 como hero de Pérgola 360 y retirar el video número 11 de la galería.
+- [x] Restaurar el video retirado después del recorrido 9 como nuevo número 10.
+- [x] Mantener Inicio como página principal y convertir las tres líneas junto a la marca en navegación móvil a Pérgola 360, Galería y demás secciones.
+- [x] Confirmar Inicio como URL principal compartible y Pérgola 360 como sección aparte.
+- [x] Convertir las piezas de Galería a recuadros y mostrar Aluminio premium vs. estándar con imágenes respectivas.
+- [x] Restaurar los videos de Pérgola 360 en formato de recuadros.
+- [x] Eliminar las tres rayas decorativas de Contacto e integrar un video en recuadro bajo Funcional y Cepillado.
+- [x] Ampliar el carrusel del hero de Inicio a cinco imágenes con efectos y habilitar ampliación en Proceso y Proyectos.
+- [x] Confirmar las cinco imágenes del hero y reforzar la visibilidad de sus transiciones.
+- [x] Hacer transparente la cabecera superior de Inicio y conservar contraste en la navegación.
+- [x] Refinar la cabecera al desplazarse con cristal, sombras de texto y reducción de escala.
+- [x] Retirar del hero las tres líneas doradas y el texto que cambia por imagen, sin alterar el menú superior.
+- [x] Simplificar la línea decorativa sobre “Pérgolas de aluminio” sin alterar el texto ni el hero.
+- [x] Auditar decoraciones y textos redundantes en Inicio, Galería y Pérgola 360 para proponer limpiezas selectivas.
+- [x] Extraer la captura del segundo 2.5 del video aportado e integrarlo como pieza ampliable en Galería.
+- [x] Mover el video nuevo de Galería a Pérgola 360, usar el video aportado como portada y reforzar numeración y contacto.
+- [x] Añadir dos fotos a Galería, tres videos a Pérgola 360 y reemplazar la portada por el segundo video aportado.
+- [x] Generar una imagen hero fotorrealista de pérgola de aluminio tacto madera, sin textos ni elementos de interfaz.
+- [x] Integrar la imagen hero generada en el carrusel de Inicio sin alterar sus cinco diapositivas ni controles.
+- [x] Añadir transición suave al texto del hero y un título atractivo para el acabado imitación madera.
+- [x] Crear cuadro externo con paletas de colores, códigos HEX y usos recomendados.
+- [x] Aplicar la paleta 02 Blanco arquitectónico a la web y aclarar los tonos oscuros de la paleta 03.
+- [x] Restaurar 4c7850e1 y eliminar únicamente las palabras dinámicas de fondo del carrusel, sin tocar textos, botones ni estilos base.
+- [x] Eliminar iconos hamburguesa redundantes y conservar solo el menú móvil necesario para navegar por las secciones.
+
+- [x] Hacer transparentes las cabeceras de Galería y Pérgola 360 sobre sus hero, con efecto cristal al desplazarse.
+
+- [x] Sustituir el proyecto 03 por la foto enviada y retirar la imagen repetida del proceso 08.
+- [x] Optimizar videos de Pérgola 360 para móvil con posters y carga diferida.

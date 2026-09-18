@@ -1,0 +1,142 @@
+/* Terraza 360: retícula audiovisual simétrica; texto centrado sobre video, sin cajas ni glow. */
+/* Pérgola 360: portada inmersiva completa, números legibles y recorridos ampliables. */
+.t360-grid-page { min-height: 100vh; color: #18201d; background: #fff; }
+.t360-grid-header { position: absolute; z-index: 10; top: 0; right: 0; left: 0; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 2rem; min-height: 72px; padding: 0 clamp(1rem, 3.8vw, 4.3rem); border-bottom: 1px solid rgba(255,255,255,.24); background: transparent; backdrop-filter: none; transition: background 220ms ease-out, border-color 220ms ease-out, box-shadow 220ms ease-out, backdrop-filter 220ms ease-out; }
+.t360-grid-header.is-scrolled { position: fixed; border-bottom-color: rgba(255,255,255,.2); background: rgba(13,16,16,.68); box-shadow: 0 12px 34px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.12); backdrop-filter: blur(18px) saturate(1.2); -webkit-backdrop-filter: blur(18px) saturate(1.2); }
+.t360-grid-brand { display: inline-flex; align-items: center; width: fit-content; gap: .6rem; color: #fff; font-size: .7rem; font-weight: 800; line-height: .92; text-decoration: none; }
+.t360-grid-brand img { width: 34px; height: 34px; object-fit: contain; }
+.t360-grid-brand strong { font-size: .87rem; }
+.t360-grid-header nav { display: flex; align-items: center; gap: clamp(.9rem, 2vw, 1.9rem); }
+.t360-mobile-quote { display: none; }
+.t360-grid-header nav a, .t360-grid-back { color: rgba(255,255,255,.8); font-size: .63rem; font-weight: 850; letter-spacing: .1em; text-decoration: none; text-transform: uppercase; }
+.t360-grid-header nav a.is-active { color: #fff; border-bottom: 1px solid #d5a457; }
+.t360-grid-back { justify-self: end; display: inline-flex; align-items: center; gap: .4rem; }
+
+.t360-cover { isolation: isolate; position: relative; display: grid; height: 100svh; min-height: 648px; overflow: hidden; align-items: end; padding: clamp(1.5rem, 5vw, 5rem); background: #121615; }
+.t360-cover > img, .t360-cover > video { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 44%; filter: saturate(1.16) contrast(1.05) brightness(1.12); }
+.t360-cover::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(5,7,7,.02), transparent 48%, rgba(5,7,7,.3)); }
+.t360-cover-caption { display: grid; gap: .35rem; color: #fff; text-shadow: 0 3px 18px rgba(5,7,7,.46); }
+.t360-cover-caption span { color: #e3c285; font-size: .64rem; font-weight: 900; letter-spacing: .13em; text-transform: uppercase; }
+.t360-cover-caption strong { max-width: 17ch; font-size: clamp(1.5rem, 3vw, 2.8rem); font-weight: 900; letter-spacing: -.05em; line-height: .96; }
+.t360-cover-scroll { position: absolute; right: clamp(1.5rem, 5vw, 5rem); bottom: clamp(1.5rem, 5vw, 5rem); display: inline-flex; align-items: center; gap: .55rem; color: #fff; font-size: .64rem; font-weight: 850; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; }
+
+.t360-grid-main { width: min(100% - 3rem, 1320px); margin: 0 auto; padding: clamp(4.5rem, 9vw, 8rem) 0 6rem; }
+.t360-grid-intro { max-width: 760px; margin: 0 auto clamp(3rem, 6vw, 5.2rem); text-align: center; }
+.t360-grid-intro > span { color: #d5a457; font-size: .65rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+.t360-grid-intro h1 { margin: .75rem 0 0; color: #18201d; font-size: clamp(3rem, 7vw, 6.8rem); font-weight: 900; letter-spacing: -.075em; line-height: .88; }
+.t360-grid-intro h1 em { color: #d5a457; font-style: normal; }
+.t360-grid-intro p { max-width: 38rem; margin: 1.1rem auto 0; color: rgba(24,32,29,.7); font-size: 1rem; font-weight: 650; line-height: 1.6; }
+
+.t360-video-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1rem, 1.9vw, 1.6rem); }
+.t360-video-card { overflow: hidden; border: 1px solid rgba(24,32,29,.25); background: #fff; box-shadow: 0 16px 34px rgba(22,31,27,.12); }
+.t360-video-media { position: relative; aspect-ratio: 1 / 1; overflow: hidden; background: #141917; }
+.t360-video-media::after { position: absolute; z-index: 0; inset: 0; pointer-events: none; content: ""; background: linear-gradient(180deg, rgba(5,8,7,.06) 28%, rgba(5,8,7,.18) 48%, rgba(5,8,7,.86) 100%); }
+.t360-video-media > video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: saturate(1.08) contrast(1.05) brightness(.96); transition: transform 500ms ease-out, filter 500ms ease-out; }
+.t360-video-card:hover .t360-video-media > video { transform: scale(1.025); filter: saturate(1.12) contrast(1.07) brightness(1); }
+.t360-video-copy { position: absolute; z-index: 1; right: 1.35rem; bottom: 1.15rem; left: 1.35rem; color: #fff; text-align: left; }
+.t360-video-copy > span { display: flex; align-items: center; gap: .5rem; margin-bottom: .58rem; color: #ffe1a5; font-size: .62rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; text-shadow: 0 2px 9px rgba(0,0,0,.9); }.t360-video-index { display: inline-grid; min-width: 2.35rem; min-height: 1.7rem; place-items: center; padding: 0 .35rem; color: #151917; background: #ffe1a5; box-shadow: 0 4px 12px rgba(0,0,0,.24); font-size: .72rem; font-style: normal; letter-spacing: .04em; text-shadow: none; }.t360-video-category { font-style: normal; }
+.t360-video-copy h2 { margin: 0; color: #fff; font-size: clamp(1.65rem, 3vw, 2.8rem); font-weight: 900; letter-spacing: -.06em; line-height: .9; text-shadow: 0 3px 15px rgba(0,0,0,.88); }
+.t360-video-copy small { display: inline-flex; align-items: center; gap: .35rem; margin-top: .7rem; color: rgba(255,255,255,.88); font-size: .59rem; font-weight: 850; letter-spacing: .1em; text-shadow: 0 2px 8px rgba(0,0,0,.88); text-transform: uppercase; }
+.t360-video-expand { position: absolute; z-index: 2; top: .9rem; right: .9rem; display: inline-flex; align-items: center; gap: .35rem; min-height: 2.55rem; padding: 0 .72rem; color: #151817; border: 1px solid rgba(255,255,255,.9); background: rgba(255,255,255,.94); box-shadow: 0 4px 18px rgba(0,0,0,.22); font-size: .62rem; font-weight: 900; letter-spacing: .06em; text-transform: uppercase; transition: transform 180ms ease-out, background 180ms ease-out; }
+.t360-video-expand:hover { background: #d5a457; transform: scale(1.06); }
+.t360-video-expand:active { transform: scale(.96); }
+
+.t360-contact-section { margin-top: 0; }.t360-contact-section .t360-contact-wrap { display: block; width: min(100% - 2rem, 1400px); max-width: 1400px; margin: 0 auto; }.t360-contact-section .contact-card { width: 100%; margin: 0 auto; }
+.t360-whatsapp { position: fixed; z-index: 60; right: clamp(1rem, 2vw, 1.5rem); bottom: clamp(4.7rem, 8vw, 5.8rem); display: inline-flex; align-items: center; gap: .52rem; padding: .72rem .92rem; color: #fff; border: 2px solid #fff; border-radius: 3px; background: #25d366; box-shadow: 0 10px 25px rgba(16,98,52,.35); font-size: .76rem; font-weight: 900; letter-spacing: -.015em; text-decoration: none; transition: transform 180ms ease-out, background 180ms ease-out; }
+.t360-whatsapp svg { width: 1.52rem; height: 1.52rem; flex: 0 0 auto; }.t360-whatsapp:hover { background: #1ebe5d; transform: translateY(-2px); }.t360-whatsapp:active { transform: scale(.96); }
+.t360-video-modal { position: fixed; z-index: 100; inset: 0; display: grid; place-items: center; padding: 1.5rem; background: rgba(255,255,255,.93); backdrop-filter: blur(14px); }
+.t360-video-modal-panel { position: relative; width: min(100%, 1120px); overflow: hidden; border: 1px solid rgba(24,32,29,.28); background: #fff; box-shadow: 0 28px 80px rgba(19,26,22,.2); }
+.t360-video-modal-panel > video { display: block; width: 100%; max-height: min(68vh, 760px); background: #eef0ed; object-fit: contain; }
+.t360-video-modal-panel > div { padding: 1.35rem 1.6rem 1.55rem; color: #18201d; border-top: 1px solid rgba(24,32,29,.14); background: #fff; }
+.t360-video-modal-panel > div span { color: #a66e20; font-size: .65rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
+.t360-video-modal-panel > div h2 { margin: .45rem 0; color: #18201d !important; font-size: clamp(1.8rem, 4vw, 3.4rem); font-weight: 900; letter-spacing: -.055em; line-height: .95; text-shadow: none !important; }
+.t360-video-modal-panel > div p { max-width: 48rem; margin: 0; color: rgba(24,32,29,.76) !important; font-weight: 700; line-height: 1.55; text-shadow: none !important; }
+.t360-video-modal-panel > div .t360-modal-benefit { margin-top: .85rem; color: #304038 !important; }
+.t360-modal-benefit strong { color: #a66e20; }
+.t360-video-modal-close { position: absolute; z-index: 2; top: 1rem; right: 1rem; display: grid; width: 2.6rem; height: 2.6rem; place-items: center; color: #151817; border: 1px solid rgba(21,27,23,.35); border-radius: 50%; background: #fff; }
+
+@media (max-width: 1020px) and (min-width: 721px) {
+  .t360-video-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+  .t360-grid-header { grid-template-columns: 1fr auto; min-height: 62px; padding: 0 1rem; }
+  .t360-grid-header nav { display: none; }
+  .t360-mobile-quote { display: inline-flex; justify-self: end; align-items: center; padding: .58rem .72rem; color: #17201c; background: #e5bc70; font-size: .58rem; font-weight: 900; letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
+  .t360-grid-back { display: none; }
+  .t360-grid-brand img { width: 29px; height: 29px; }
+  .t360-grid-brand { font-size: .62rem; }
+  .t360-grid-brand strong { font-size: .76rem; }
+  .t360-grid-back { font-size: .58rem; }
+  .t360-grid-main { width: min(100% - 2rem, 1320px); padding-top: 4rem; }
+  .t360-cover { height: 100svh; min-height: 620px; padding: 1.5rem 1.5rem 5.8rem; }
+  .t360-cover > img, .t360-cover > video { object-position: center 44%; }
+  .t360-cover-scroll { right: 1.5rem; bottom: 1.5rem; }
+  .t360-cover-caption strong { max-width: 15ch; }
+  .t360-grid-intro h1 { font-size: clamp(3rem, 14vw, 4.3rem); }
+  .t360-video-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .t360-video-card { min-height: 0; }
+  .t360-video-copy { right: 1rem; bottom: .95rem; left: 1rem; }
+  .t360-video-copy h2 { font-size: clamp(1.6rem, 7.2vw, 2.1rem); }
+  .t360-video-expand { top: .75rem; right: .75rem; min-height: 2.4rem; padding: 0 .64rem; }
+  .t360-whatsapp { right: 1rem; bottom: 4.7rem; width: 3rem; height: 3rem; justify-content: center; padding: 0; border-radius: 50%; }
+  .t360-whatsapp span { display: none; }
+  .t360-video-modal { padding: 1rem; }
+  .t360-video-modal-panel > div { padding: 1.15rem; }
+}
+
+
+/* Paleta 02 · Blanco arquitectónico: el contenido audiovisual conserva protagonismo sobre superficies claras. */
+.t360-grid-page {
+  color: #1c2421;
+  background: #f7f7f4;
+}
+
+.t360-grid-header {
+  border-bottom-color: rgba(226,183,111,.38);
+  background: rgba(28,36,33,.95);
+}
+
+.t360-grid-header nav a.is-active {
+  border-bottom-color: #c58c3a;
+}
+
+.t360-grid-intro > span,
+.t360-grid-intro h1 em {
+  color: #c58c3a;
+}
+
+.t360-video-card {
+  border-color: rgba(28,36,33,.2);
+  box-shadow: 0 16px 34px rgba(28,36,33,.12);
+}
+
+.t360-video-index {
+  color: #1c2421;
+  background: #e2b76f;
+}
+
+.t360-video-expand:hover {
+  background: #c58c3a;
+}
+
+/* La cabecera vive sobre el video hero como en Inicio; sólo se solidifica al avanzar. */
+.t360-grid-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: transparent !important;
+  border-bottom-color: rgba(255,255,255,.24);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.t360-grid-header.is-scrolled {
+  position: fixed;
+  background: rgba(13,16,16,.68) !important;
+  border-bottom-color: rgba(255,255,255,.2);
+  box-shadow: 0 12px 34px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.12);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+}

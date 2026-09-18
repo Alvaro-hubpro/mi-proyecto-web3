@@ -1,0 +1,33 @@
+/* Hero audiovisual: video real en 2K, sin audio y con claridad prioritaria. */
+.hero-video-stage {
+  background: #151917;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.08) contrast(1.06) brightness(1.03);
+}
+
+.hero-video-stage .hero-overlay {
+  background: linear-gradient(90deg, rgba(5,7,7,.42) 0%, rgba(5,7,7,.14) 53%, rgba(5,7,7,.06) 100%), linear-gradient(180deg, rgba(5,7,7,.08), transparent 55%, rgba(5,7,7,.3));
+}
+
+.hero-video-stage .hero-slide-caption {
+  color: rgba(255,255,255,.82);
+  font-family: inherit;
+  font-size: .66rem;
+  font-style: normal;
+  font-weight: 850;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .hero-video { object-position: 58% center; }
+  .hero-video-stage .hero-overlay { background: linear-gradient(180deg, rgba(5,7,7,.12), rgba(5,7,7,.06) 38%, rgba(5,7,7,.48)); }
+}

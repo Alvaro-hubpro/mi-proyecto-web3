@@ -1,0 +1,289 @@
+/*
+ * Catálogo de aluminio: jerarquía sans-serif robusta, comparación material
+ * explícita y contraste visual entre acabados estándar y premium.
+ */
+
+.material-catalog .centered-heading {
+  max-width: 780px;
+}
+
+.material-catalog .comparison-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(26px, 5vw, 76px);
+  align-items: stretch;
+}
+
+.material-catalog .comparison-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 620px;
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(49, 58, 52, 0.24);
+  background: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 18px 42px rgba(59, 51, 37, 0.08);
+}
+
+.material-catalog .comparison-card::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  left: 20px;
+  width: 38px;
+  height: 3px;
+  background: rgba(255, 232, 187, 0.92);
+  box-shadow: 0 8px 0 rgba(255, 232, 187, 0.72), 0 16px 0 rgba(255, 232, 187, 0.48);
+  transform: skewX(-30deg);
+}
+
+.material-catalog .comparison-card.premium {
+  border: 1px solid rgba(208, 139, 44, 0.72);
+  box-shadow: 0 20px 60px rgba(173, 102, 17, 0.16), 0 0 34px rgba(255, 178, 61, 0.13);
+}
+
+.material-swatch {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  background: #c9cbc8;
+}
+
+.material-swatch::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 44%, rgba(11, 15, 13, 0.66) 100%);
+}
+
+.material-swatch img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  filter: saturate(0.35) contrast(1.16) brightness(1.05);
+  transition: transform 500ms var(--ease), filter 500ms var(--ease);
+}
+
+.premium .material-swatch img {
+  filter: saturate(0.75) contrast(1.2) brightness(0.98);
+}
+
+.comparison-card:hover .material-swatch img {
+  transform: scale(1.07);
+}
+
+.material-swatch span {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  bottom: 17px;
+  color: #fff7e5;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.material-catalog .comparison-content {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 34px 35px;
+  border-top: 0;
+}
+
+.material-catalog .comparison-content > span {
+  font-weight: 900;
+}
+
+.material-catalog .comparison-content h3 {
+  margin-top: 11px;
+  font-size: clamp(35px, 4vw, 58px);
+  line-height: 0.9;
+}
+
+.material-catalog .comparison-content > p {
+  max-width: 380px;
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.material-catalog .comparison-content ul {
+  margin-top: auto;
+  padding-top: 22px;
+}
+
+.material-catalog .comparison-content ul::before {
+  content: "FICHA MATERIAL";
+  display: block;
+  margin-bottom: 12px;
+  color: rgba(116, 91, 55, 0.70);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.material-catalog .comparison-content li {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.material-catalog .premium .comparison-content {
+  background: linear-gradient(135deg, rgba(255, 221, 162, 0.25), rgba(255,255,255,0.20));
+}
+
+.premium .comparison-content ul::before { color: #ad782d; }
+
+.project-controls::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  margin-right: 6px;
+  background: #d5a457;
+  box-shadow: 0 6px 0 rgba(213,164,87,.75), 0 12px 0 rgba(213,164,87,.48);
+  transform: skewX(-30deg);
+}
+
+.project-controls::before { display: none; }
+
+@media (max-width: 760px) {
+  .material-catalog .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .material-catalog .comparison-card {
+    min-height: 0;
+  }
+
+  .material-swatch,
+  .material-swatch img {
+    min-height: 250px;
+  }
+
+  .material-catalog .comparison-content {
+    padding: 28px 24px 30px;
+  }
+}
+
+/* Contact mode: an immersive glass panel activated by the three-line navigation trigger. */
+.contact-menu-trigger {
+  display: inline-grid;
+  gap: 5px;
+  width: 48px;
+  height: 48px;
+  place-content: center;
+  color: #fff7e5;
+  background: rgba(18, 25, 21, 0.18);
+  border: 1px solid rgba(255, 217, 150, 0.52);
+  box-shadow: 0 0 24px rgba(255, 165, 42, 0.14);
+  transition: transform 180ms var(--ease), background 180ms var(--ease), box-shadow 180ms var(--ease);
+}
+
+.contact-menu-trigger:hover {
+  background: rgba(249, 165, 50, 0.28);
+  box-shadow: 0 0 38px rgba(255, 165, 42, 0.38);
+  transform: translateY(-2px);
+}
+
+.contact-menu-trigger:active { transform: scale(0.96); }
+
+.contact-menu-trigger span {
+  display: block;
+  width: 21px;
+  height: 2px;
+  background: currentColor;
+}
+
+.contact-overlay-screen {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 56px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 360ms var(--ease), visibility 360ms step-end;
+}
+
+.contact-overlay-screen.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 360ms var(--ease);
+}
+
+.contact-overlay-shade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(112deg, rgba(9, 14, 12, 0.86) 0%, rgba(14, 21, 17, 0.52) 48%, rgba(11, 17, 14, 0.92) 100%),
+    radial-gradient(circle at 83% 30%, rgba(255, 155, 26, 0.50), transparent 30%),
+    url("/manus-storage/pergola-immersive-hero_64c89d01.jpeg") center / cover;
+  transform: scale(1.06);
+}
+
+.contact-overlay-panel {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 0.88fr);
+  grid-template-areas:
+    "brand form"
+    "copy form"
+    "meta form";
+  gap: 28px clamp(40px, 7vw, 110px);
+  width: min(1200px, 100%);
+  min-height: min(720px, calc(100svh - 112px));
+  padding: clamp(30px, 5vw, 76px);
+  overflow: hidden;
+  color: #fff8e9;
+  border: 1px solid rgba(255, 216, 145, 0.55);
+  background: linear-gradient(135deg, rgba(28, 39, 33, 0.82), rgba(15, 23, 19, 0.64));
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.46), inset 0 0 80px rgba(255, 175, 53, 0.12), 0 0 70px rgba(255, 151, 25, 0.28);
+  backdrop-filter: blur(22px);
+  transform: translateY(36px) scale(0.98);
+  transition: transform 440ms var(--ease);
+}
+
+.contact-overlay-panel::before {
+  content: "";
+  position: absolute;
+  inset: 17px;
+  pointer-events: none;
+  border: 1px solid rgba(255, 241, 203, 0.12);
+}
+
+.contact-overlay-screen.is-open .contact-overlay-panel { transform: translateY(0) scale(1); }
+
+.contact-overlay-close {
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  right: 24px;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: #fff8e9;
+  background: rgba(255, 221, 159, 0.10);
+  border: 1px solid rgba(255, 221, 159, 0.42);
+  transition: background 180ms var(--ease), transform 180ms var(--ease);
+}
+
+.contact-overlay-close:hover { background: rgba(255, 178, 60, 0.30); transform: rotate(90deg); }
+.overlay-brandline { grid-area: brand; display: flex; align-items: center; gap: 12px; color: rgba(255, 237, 201, 0.75); font-size: 11px; font-weight: 900; letter-spacing: 0.10em; text-transform: uppercase; }.overlay-brandline .brand-mark { width: 42px; height: 42px; }
+.overlay-copy { grid-area: copy; align-self: center; max-width: 575px; }.overlay-copy .eyebrow { color: #ffd58c; }.overlay-copy h2 { margin: 16px 0 22px; color: #fffdf7; font-size: clamp(48px, 6.2vw, 94px); line-height: .91; }.overlay-copy h2 em { color: #ffc76d; }.overlay-copy p { margin: 0; color: rgba(255, 247, 231, 0.82); font-size: 17px; font-weight: 700; line-height: 1.7; }
+.overlay-form { grid-area: form; align-self: center; display: grid; gap: 18px; padding: 32px; border: 1px solid rgba(255, 219, 152, 0.40); background: rgba(8, 13, 11, 0.34); box-shadow: inset 0 0 42px rgba(255, 179, 59, 0.08); }.overlay-form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }.overlay-form label { display: grid; gap: 8px; color: rgba(255, 243, 218, 0.84); font-size: 10px; font-weight: 900; letter-spacing: .11em; text-transform: uppercase; }.overlay-form input, .overlay-form textarea { width: 100%; padding: 11px 0; color: #fff; background: transparent; border: 0; border-bottom: 1px solid rgba(255,255,255,.32); outline: 0; font-size: 14px; font-weight: 700; resize: vertical; }.overlay-form input:focus, .overlay-form textarea:focus { border-color: #ffcf7c; box-shadow: 0 7px 14px -10px rgba(255, 183, 63, .95); }.overlay-form input::placeholder, .overlay-form textarea::placeholder { color: rgba(255,255,255,.44); }.overlay-form .button { justify-self: start; margin-top: 8px; }
+.overlay-meta { grid-area: meta; display: flex; flex-wrap: wrap; gap: 16px 28px; align-self: end; color: rgba(255, 238, 205, 0.82); font-size: 12px; font-weight: 800; }.overlay-meta a, .overlay-meta span { display: inline-flex; align-items: center; gap: 8px; }.overlay-meta svg { color: #ffcd77; }.overlay-success { display: grid; justify-items: start; gap: 13px; min-height: 355px; align-content: center; }.overlay-success > svg { color: #ffd17e; }.overlay-success h3 { margin: 0; color: #fffdf7; font-size: 34px; }.overlay-success p { margin: 0; max-width: 350px; color: rgba(255,246,229,.76); font-size: 15px; line-height: 1.7; }.overlay-success button { display: inline-flex; align-items: center; gap: 8px; padding: 0; color: #ffd17e; background: transparent; font-size: 13px; font-weight: 900; }
+
+@media (max-width: 850px) {
+  .contact-overlay-panel { grid-template-columns: 1fr; grid-template-areas: "brand" "copy" "form" "meta"; min-height: min-content; max-height: calc(100svh - 32px); overflow-y: auto; gap: 26px; }.overlay-copy h2 { font-size: clamp(48px, 11vw, 74px); }.overlay-form { align-self: stretch; }.overlay-meta { align-self: start; }
+}
+
+@media (max-width: 540px) {
+  .contact-menu-trigger { width: 43px; height: 43px; }.contact-overlay-screen { padding: 12px; }.contact-overlay-panel { padding: 57px 21px 27px; }.contact-overlay-panel::before { inset: 9px; }.contact-overlay-close { top: 19px; right: 19px; width: 39px; height: 39px; }.overlay-brandline { padding-right: 50px; font-size: 9px; line-height: 1.45; }.overlay-copy h2 { font-size: clamp(44px, 12vw, 61px); }.overlay-copy p { font-size: 15px; }.overlay-form { padding: 25px 20px; }.overlay-form-row { grid-template-columns: 1fr; gap: 16px; }.overlay-meta { display: grid; gap: 12px; }
+}

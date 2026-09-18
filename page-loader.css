@@ -1,0 +1,106 @@
+/* UI style: transición inicial compacta, arquitectónica y de alto contraste. */
+.page-loader {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: .82rem;
+  overflow: hidden;
+  color: #fff;
+  background: #111514;
+}
+
+.page-loader::before,
+.page-loader::after {
+  position: absolute;
+  content: "";
+  width: min(56vw, 620px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(214, 169, 83, .8), transparent);
+}
+
+.page-loader::before { top: 32%; }
+.page-loader::after { bottom: 32%; }
+
+.page-loader-mark {
+  display: flex;
+  gap: .26rem;
+  transform: skewY(-34deg);
+}
+
+.page-loader-mark i {
+  display: block;
+  width: 1.05rem;
+  height: 3.45rem;
+  border: 1px solid #d6a953;
+  background: linear-gradient(180deg, rgba(214, 169, 83, .3), transparent);
+  animation: loader-louver 900ms cubic-bezier(.23, 1, .32, 1) infinite alternate;
+}
+
+.page-loader-mark i:nth-child(2) { animation-delay: 120ms; }
+.page-loader-mark i:nth-child(3) { animation-delay: 240ms; }
+
+.page-loader strong {
+  font-size: 1.05rem;
+  line-height: .88;
+  letter-spacing: -.04em;
+  text-align: center;
+}
+
+.page-loader > span {
+  color: rgba(255,255,255,.62);
+  font-size: .64rem;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.page-loader-track {
+  width: 148px;
+  height: 2px;
+  overflow: hidden;
+  background: rgba(255,255,255,.16);
+}
+
+.page-loader-track i {
+  display: block;
+  width: 46%;
+  height: 100%;
+  background: #d6a953;
+  animation: loader-track 720ms ease-in-out infinite alternate;
+}
+
+@keyframes loader-louver {
+  from { opacity: .35; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(-4px); }
+}
+
+@keyframes loader-track {
+  from { transform: translateX(-15%); }
+  to { transform: translateX(145%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-loader-mark i,
+  .page-loader-track i { animation: none; }
+}
+
+.subpage-legal {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem clamp(1.1rem, 6vw, 7rem);
+  color: rgba(255,255,255,.62);
+  background: #111514;
+  border-top: 1px solid rgba(255,255,255,.14);
+  font-size: .63rem;
+  font-weight: 800;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .subpage-legal { align-items: flex-start; flex-direction: column; gap: .3rem; }
+}
